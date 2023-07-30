@@ -21,27 +21,11 @@
     "prepublishOnly": "father doctor && npm run build",
     "start": "npm run dev"
   },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "lint-staged": {
-    "*.{md,json}": [
-      "prettier --write --no-error-on-unmatched-pattern"
-    ],
-    "*.{css,less}": [
-      "stylelint --fix",
-      "prettier --write"
-    ],
-    "*.{js,jsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.{ts,tsx}": [
-      "eslint --fix",
-      "prettier --parser=typescript --write"
-    ]
+  "dependencies": {
+    "antd": "^5.7.3",
+    "lodash": "^4.17.21",
+    "styled-components": "^6.0.5",
+    "umi-request": "^1.4.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
